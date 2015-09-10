@@ -1,5 +1,3 @@
-package roulette;
-
 
 /**
  * Represents a Gambler simply as an amount to money to be spent.

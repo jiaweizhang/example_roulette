@@ -1,5 +1,3 @@
-package roulette;
-
 import java.util.Random;
 
 

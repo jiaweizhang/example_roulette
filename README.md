@@ -1,2 +1,8 @@
 # example_roulette
 Program to refactor that plays a game of roulette
+Names: Ankit Kayastha (ak308), Jiawei Zhang (jz134)
+The main change we made was making the Bet class an abstract superclass, and then creating classes for ech of the type of bet that extendsthis abstract superclass. Within the abstract superclass, there are umimplemented abstract methods that are implemented in each of the subclasses since each sublcass has a different implementation of the method. For instance, the promptUser() method is an bastract method that takes care of the using the ConsoleReader package. Because each type of bet is performing the same action but printing different things, an abstract method makes perfect sense. 
+The refactored code is simpler because it has gotten rid of if statements that are not necessary. By calling the indexed array of bets corresponding to each Bet subclass, one knows that each Bet subclass has its own functionality so there is no need to check with the if statements.
+The refactored code is more complex because we have added an inheritance hierarchy. Some may consider the inheritance hierarchy "complex" but in the end, it simplifies other code in the program. 
+The trade-offs include that in creating the inheritance hierarchy, there is more code (more classes), so this was definitely something to consider.
+The refactored code is definitely better because it is more efficient and gets rid of unnecessary statements. Even though it required more code, in the end, it is more efficient, and offers more flexibility to add new features.
